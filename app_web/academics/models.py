@@ -23,3 +23,41 @@ class Person(models.Model):
     updated_at = models.DateTimeField(default = datetime.datetime.now())
     deleted_at = models.DateTimeField(null = True, blank = True)
 
+class Students(models.Model):
+    code = models.CharField(max_length = 20)
+    status = models.BooleanField(null = True, blank = True, default = True)
+    created_at = models.DateTimeField(default = datetime.datetime.now())
+    updated_at = models.DateTimeField(default = datetime.datetime.now())
+    deleted_at = models.DateTimeField(null = True, blank = True)
+
+class identification_types(models.Model):
+    name = models.CharField(max_length = 50)
+    abrev = models.CharField(max_length = 10)
+    descrip =  models.CharField(max_length = 100)
+    created_at = models.DateTimeField(default = datetime.datetime.now())
+    updated_at = models.DateTimeField(default = datetime.datetime.now())
+    deleted_at = models.DateTimeField(null = True, blank = True)
+
+class cities(models.Model):
+    name = models.CharField(max_length = 100)
+    abrev = models.CharField(max_length = 10)
+    descrip =  models.CharField(max_length = 10)
+    created_at = models.DateTimeField(default = datetime.datetime.now())
+    updated_at = models.DateTimeField(default = datetime.datetime.now())
+    deleted_at = models.DateTimeField(null = True, blank = True)
+
+class departments(models.Model):
+    name = models.CharField(max_length = 100)
+    abrev = models.CharField(max_length = 10)
+    descrip =  models.CharField(max_length = 10)
+    created_at = models.DateTimeField(default = datetime.datetime.now())
+    updated_at = models.DateTimeField(default = datetime.datetime.now())
+    deleted_at = models.DateTimeField(null = True, blank = True)
+
+class cpuntries(models.Model):
+    name = models.CharField(max_length = 100)
+    abrev = models.CharField(max_length = 10)
+    descrip =  models.CharField(max_length = 10)
+    created_at = models.DateTimeField(default = datetime.datetime.now())
+    updated_at = models.DateTimeField(default = datetime.datetime.now())
+    deleted_at = models.DateTimeField(null = True, blank = True)
