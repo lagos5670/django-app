@@ -14,6 +14,11 @@ class User(models.Model):
     updated_at = models.DateTimeField(default = datetime.datetime.now())
     deleted_at = models.DateTimeField(null = True, blank = True)
 
+    #Convetir a acdena para que los datos se visualicen 
+    def __str__(self):
+        return self.email
+
+
 class Person(models.Model):
     firstname = models.CharField(max_length = 20) 
     lastname = models.CharField(max_length = 20)
