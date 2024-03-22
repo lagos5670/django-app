@@ -27,6 +27,9 @@ class Person(models.Model):
     created_at = models.DateTimeField(default = datetime.datetime.now())
     updated_at = models.DateTimeField(default = datetime.datetime.now())
     deleted_at = models.DateTimeField(null = True, blank = True)
+    #Crear una llave foranea 
+    id_user = models.ForeignKey(User, on_delete = models.CASCADE)
+
 
 class Students(models.Model):
     code = models.CharField(max_length = 20)
