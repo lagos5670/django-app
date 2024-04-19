@@ -11,6 +11,10 @@ class DateTimeModel(models.Model):
     class Meta:
         abstract = True
 
+
+
+    
+
 # Create your models here.
 #model.DateTimeField(auto_now = true, null = false ) => update_at
 #model.DateTimeField(auto_now_add = true, null = false ) => Defaul now()
@@ -59,7 +63,7 @@ class departments(DateTimeModel):
     descrip =  models.CharField(max_length = 10)
    
 
-class cpuntries(DateTimeModel):
+class countries(DateTimeModel):
     name = models.CharField(max_length = 100)
     abrev = models.CharField(max_length = 10)
     descrip =  models.CharField(max_length = 10)
