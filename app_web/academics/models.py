@@ -63,7 +63,7 @@ class departments(DateTimeModel):
     descrip =  models.CharField(max_length = 10)
    
 
-class countries(DateTimeModel):
+class cpuntries(DateTimeModel):
     name = models.CharField(max_length = 100)
     abrev = models.CharField(max_length = 10)
     descrip =  models.CharField(max_length = 10)
