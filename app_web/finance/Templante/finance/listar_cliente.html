@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="#00FFFF">
+
+    <h1 center> Bienvenido a Finance </h1>
+    <ul>
+        {% for cliente in cliente %}
+        <li>
+            {{cliente.nombre}} {{user.lastname}} {{cliente.email}} {{cliente.celular}}
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for productos in productos %}
+        <li>
+            {{productos.nombr_producto}} {{productos.abreviatura}} {{productos.descripcion}} 
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for clientes_productos in clientes_productos %}
+        <li>
+            {{clientes_productos.numero_cuenta}} 
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for tipos_transacciones in tipos_transacciones %}
+        <li>
+            {{tipos_transacciones.nombre}} {{tipos_transacciones.abreviatura}} {{tipos_transacciones.descripcion}}  
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for transacciones in transacciones %}
+        <li>
+            {{transacciones.monto}}
+        </li>
+        {% endfor %}
+    </ul>
+    
+   
+    
+</body>
+</html>
