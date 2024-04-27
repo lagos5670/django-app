@@ -12,23 +12,23 @@ def index(request):
 def list_cliente(request):
     #return HttpResponse("::: Listar Usuario :::")
     cliente = clientes.objects.all()
-    return render(request, 'finance\listar_cliente.html',{'clientes':cliente})
+    return render(request, 'app_web\finance\Templante\finance\listar_cliente.html',{'clientes':cliente})
 
 def list_product(request):
     productos = Producto.objects.all()
-    return render(request, 'finance\listar_cliente.html',{'producto':productos})
+    return render(request, 'app_web\finance\Templante\finance\listar_cliente.html',{'producto':productos})
 
 def list_clienteproduct(request):
     clientes_productos = cliente_producto.objects.all()
-    return render(request, 'finance\listar_cliente.html',{'producto':clientes_productos})
+    return render(request, 'app_web\finance\Templante\finance\listar_cliente.html',{'producto':clientes_productos})
 
 def list_ttransaccion(request):
     tipos_transacciones =Tipo_transancciones.objects.all()
-    return render(request, 'finance\listar_cliente.html',{'producto':tipos_transacciones})
+    return render(request, 'app_web\finance\Templante\finance\listar_cliente.html',{'producto':tipos_transacciones})
 
 def list_transaccion(request):
     transacciones = Transaccion.objects.all()
-    return render(request, 'finance\listar_cliente.html',{'producto':transacciones})
+    return render(request, 'app_web\finance\Templante\finance\listar_cliente.html',{'producto':transacciones})
 
 
 def create_cliente(request):
