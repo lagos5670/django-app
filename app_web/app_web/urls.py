@@ -21,6 +21,7 @@ from django.urls import path
 
 urlpatterns = [
     #path('academics/', include("academics.urls")),
+    path('finance/',include("finance.urls")),
     path('admin/', admin.site.urls),
-    path('finance/',include("finance.urls"))
+    
 ]

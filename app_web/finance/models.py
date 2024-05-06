@@ -17,9 +17,9 @@ class clientes(DateTimeModel):
     email = models.EmailField(null = True, blank = True)
     celular = models.CharField(max_length = 20)
 
-    #Convetir a acdena para que los datos se visualicen 
-    #def __str__(self):
-    #    return f" {self.email}-{self.}"
+    #Convetir a cadena para que los datos se visualicen 
+    def __str__(self):
+        return f"{self.nombre}-{self.lastname}-{self.email}-{self.celular}"
 
 
 class Producto(DateTimeModel):
